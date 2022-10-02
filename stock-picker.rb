@@ -15,9 +15,17 @@
 
 '''
 
-# Create empty result hash
+def stock_picker(prices)
+  highest = prices.max()
+  if prices.find_index(highest) == 0
+    highest = prices.drop(1).max()
+  end
 
-# Iterate through stock hash to determine high and low
+  lowest = prices.min()
+  if prices.find_index(lowest) == prices.count
+    lowest = 
+
+# Iterate through stock array to determine high and low
 
 # If high is [0] or low is [-1], pass to next highest or lowest
 
