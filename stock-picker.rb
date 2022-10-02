@@ -15,3 +15,12 @@
 
 '''
 
+# Create empty result hash
+
+# Iterate through stock hash to determine high and low
+
+# If high is [0] or low is [-1], pass to next highest or lowest
+
+# Return index to result hash [lowest,highest] 
+
+#print "for a profit of {#higest} - {#lowest} == highest-lowest
