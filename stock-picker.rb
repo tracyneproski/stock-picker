@@ -37,6 +37,11 @@ end
 
 # If high is [0] or low is [-1], pass to next highest or lowest
 
-# Return index to result hash [lowest,highest] 
+# Low needs to be before high, so it's not lowest in array, it's lowest before highest...
+# There is some math to figure out which combination of low vs high is the best deal.
+# Maybe use iteration through range 0-prices[current] to find lowest and subtrack. Pair with 
+# greatest difference is returned to result array
+
+# Return index to result array [lowest,highest] 
 
 #print "for a profit of {#higest} - {#lowest} == highest-lowest
