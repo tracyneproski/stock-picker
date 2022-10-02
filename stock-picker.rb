@@ -34,8 +34,10 @@ idx_amt = prices.count - 1
 
 '''
 def stock_picker(prices)
-  prices.drop(1).each do |price|
-    price - 
+  idx_amt = prices.count - 1
+ 
+
+
 
 
 end
@@ -60,8 +62,8 @@ end
 
 # OK- subtraction-
 
-# get combination of pairs
-# multidem array pair: difference
+# get combination of viable pairs
+# create hash where pair: difference <I don't know about this
 # sort by difference
 # return pair
 
