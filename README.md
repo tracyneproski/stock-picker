@@ -1,12 +1,12 @@
 # Stock Picker
 This parameter takes in an array of stock prices, one for each hypothetical day and returns a pair of days representing the best day to buy and the best day to sell. Days start at 0.
 
-Parameters
--
+*Parameters*
+
 Array
 
-Returns
--
+*Returns*
+
 Array
 
 Problems
