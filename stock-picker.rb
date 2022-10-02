@@ -16,14 +16,22 @@
 '''
 
 def stock_picker(prices)
-  highest = prices.max()
-  if prices.find_index(highest) == 0
+  if prices.find_index(prices.max()) == 0
     highest = prices.drop(1).max()
+  else
+    highest = prices.max()
   end
 
-  lowest = prices.min()
-  if prices.find_index(lowest) == prices.count
-    lowest = 
+  if prices.find_index(prices.min()) == prices.count - 1
+    lowest = prices[0..prices[prices.count - 2]].min()
+  else
+    lowest = prices.min()
+  end
+end
+
+end
+
+
 
 # Iterate through stock array to determine high and low
 
