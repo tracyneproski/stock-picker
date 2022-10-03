@@ -45,34 +45,26 @@ def stock_picker(prices)
     end
     y -= 1
   end
-  #return pairs
 
   difference = []
   pairs.each do |pair|
     difference.push(pair[1] - pair[0])
   end
 
-  pairs[difference.index(difference.max())]
-end
-    
-
-
-  
+  best_days = pairs[difference.index(difference.max())]
+  result = []
+  result.push(prices.index(best_days[0]), prices.index(best_days[1]))
 end
 
-x = 0
+puts "Please provide a list of comma-separated daily prices. Ex: 17,3,6,9,15,8,6,1,10 \n"
 
-difference = []
-pairs.each do |pair|
-  difference.push(pair[1] - pair[0])
-end
+prices = gets
+prices = prices.chomp
+prices = prices.split(',').map(&:to_i)
 
+final = stock_picker(prices)
 
-
-
-
-
-end
+p final
 
 
 

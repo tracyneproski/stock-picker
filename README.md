@@ -15,6 +15,9 @@ Create a method that calculates the best day to buy and sell stock based on an a
 
 What I used
 -
+Ruby arrays, while loops, and index lookups
 
 What I learned
 -
+In the process of trying to iterate, I learned about .product, but also that recursion just takes some
+math. Once the recursion part was done, the rest was pretty smooth.
