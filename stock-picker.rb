@@ -45,7 +45,14 @@ def stock_picker(prices)
     end
     y -= 1
   end
-  return pairs
+  #return pairs
+
+  difference = []
+  pairs.each do |pair|
+    difference.push(pair[1] - pair[0])
+  end
+
+  pairs[difference.index(difference.max())]
 end
     
 
@@ -55,13 +62,11 @@ end
 
 x = 0
 
-while x < prices.count
-  if x != prices.count - 1
-    break
-  elsif pairs.push([prices[x], prices[x+1]]
-  end
-  x += 1
+difference = []
+pairs.each do |pair|
+  difference.push(pair[1] - pair[0])
 end
+
 
 
 
