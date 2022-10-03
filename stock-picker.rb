@@ -34,8 +34,35 @@ idx_amt = prices.count - 1
 
 '''
 def stock_picker(prices)
-  idx_amt = prices.count - 1
- 
+  pairs = []
+  y = prices.count - 1
+  while y != 0
+    x = y - 1
+    pairs.push([prices[x], prices[y]])
+    until x == 0
+      x -= 1
+      pairs.push([prices[x], prices[y]])
+    end
+    y -= 1
+  end
+  return pairs
+end
+    
+
+
+  
+end
+
+x = 0
+
+while x < prices.count
+  if x != prices.count - 1
+    break
+  elsif pairs.push([prices[x], prices[x+1]]
+  end
+  x += 1
+end
+
 
 
 
