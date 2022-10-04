@@ -19,5 +19,5 @@ Ruby arrays, while loops, and index lookups
 
 What I learned
 -
-In the process of trying to iterate, I learned about .product, but also that recursion just takes some
-math. Once the recursion part was done, the rest was pretty smooth.
+In the process of trying to iterate, I learned about .product, but also that loops just takes some
+math. Once the loops part was done, the rest was pretty smooth.
